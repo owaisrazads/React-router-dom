@@ -78,7 +78,7 @@ const Product = () => {
             />
           ))
         ) : (
-          <h1>Loading...</h1>
+          <span class="loader"></span>
         )}
       </div>
     </>
