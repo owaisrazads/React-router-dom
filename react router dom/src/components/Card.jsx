@@ -9,12 +9,12 @@ function singleProductPage(){
 
   return (
  
-      <div className="card card-compact w-96 bg-base-100 mt-[10rem] shadow-2xl">
-    <figure><img src={src} className='w-[180px] mt-8' alt="Shoes" /></figure>
+      <div className="card card-compact w-96 bg-base-100 mt-[8rem] shadow-2xl gap-[-4] ">
+    <figure><img src={src} className='w-[180px] mt-8' alt="product-image" /></figure>
     <div className="card-body">
       <h2 className="card-title">{title}</h2>
       <p>{description}</p>
-      <p>{price}</p>
+                                <p className=' text-blue-800 font-semibold'>{`${price}`}</p>
       <div className="card-actions justify-end">
         <button onClick={singleProductPage} className="btn btn-primary">Show Now</button>
       </div>

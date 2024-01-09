@@ -4,10 +4,10 @@ import { useParams } from 'react-router-dom'
 import SeeNowCard from '../../components/SeeNowCard'
 
 const SingleProduct = () => {
-    const [data, setData] = useState(null); // Fixed useState syntax
+  const [data, setData] = useState(null); // Fixed useState syntax
 
-    const params = useParams()
-      //useEffect ka kaam
+  const params = useParams()
+  //useEffect ka kaam
   useEffect(() => {
     axios.get(`https://fakestoreapi.com/products/${params.id}`)
       .then((res) => {
@@ -20,9 +20,13 @@ const SingleProduct = () => {
   }, []);
 
   return (
-<>
-{data ? <SeeNowCard title={data.title} src={data.image} description={data.description} price={` ${data.price} Rupees`}/> : <span class="loader"></span>}
-</>
+    <>
+      {data ? <SeeNowCard title={data.title}
+        src={data.image}
+        description={data.description}
+        price={` ${data.price} Rupees`} />
+        : <span class="loader"></span>};
+    </>
   )
 }
 
