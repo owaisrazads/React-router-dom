@@ -73,7 +73,7 @@ const Product = () => {
               title={item.title}
               description={item.description}
               src={item.image}
-              price={` ${item.price} Rupees`}
+              price={` ${item.price} $`}
               id={item.id}
             />
           ))

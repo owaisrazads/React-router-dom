@@ -24,7 +24,7 @@ const SingleProduct = () => {
       {data ? <SeeNowCard title={data.title}
         src={data.image}
         description={data.description}
-        price={` ${data.price} Rupees`} />
+        price={` ${data.price} $`} />
         : <span class="loader"></span>};
     </>
   )

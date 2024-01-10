@@ -13,8 +13,8 @@ const SeeNowCard = ({src, title, price, description}) => {
 <div className="card-body">
   <h2 className="card-title ">{title}</h2>
   <p className=''>{description}</p>
-  <p className=' text-blue-800 font-semibold'>{price}</p>
-  <div className="card-actions justify-end">
+  <div className="card-actions justify-end items-center">
+  <button className=" rounded-2xl font-bold text-sm text-blue-700 mr-5 items-center">{price}</button>
     <button className="btn btn-primary">Buy Now</button>
   </div>
 </div>
