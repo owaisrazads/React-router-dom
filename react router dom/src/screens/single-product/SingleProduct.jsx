@@ -25,7 +25,7 @@ const SingleProduct = () => {
         src={data.image}
         description={data.description}
         price={` ${data.price} $`} />
-        : <span class="loader"></span>};
+        : <h1 className='text-center mt-[20%] font-semibold'>Loading...</h1> };
     </>
   )
 }
